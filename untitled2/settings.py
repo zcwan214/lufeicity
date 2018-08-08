@@ -49,6 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'api.md.cors.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'untitled2.urls'
@@ -127,5 +128,9 @@ REST_FRAMEWORK = {
     'VERSION_PARAM':'version',
     'DEFAULT_VERSION':'v1',
     'ALLOWED_VERSIONS':['v1','v2'],
-    'PAGE_SIZE':1
+    'PAGE_SIZE':20
 }
+
+
+CORS_METHODS = "PUT,DELETE"
+CORS_HEADERS = "xxxxx,xxxxfsdf"
